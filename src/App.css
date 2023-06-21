@@ -1,0 +1,206 @@
+
+
+.box{
+  width: 220px;
+  height: 620px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px;
+  filter: drop-shadow(0px 4px 20px rgba(43, 37, 94, 0.1));
+  border: 1px solid rgb(207, 209, 236);
+  margin: 30px 0px;
+  padding: 20px;
+  
+}
+
+ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li{
+  /* background-color: rgb(255, 244, 249); */
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap; /*흠*/
+  
+  /* margin:10px 0; */
+
+}
+
+.box-logo{
+  border-bottom: 2px solid rgb(246, 240, 252);
+  
+}
+
+.logo{
+  margin-right: 10px;
+  padding: 5px;
+}
+
+.icon{
+  padding: 5px;
+  margin-right: 20px;
+}
+
+.title{
+  line-height: 46px; /*왜 46이 가운데인지 모름*/
+  font-weight: 700;
+  font-size: 22px;
+  color: rgb(84 65 87);
+}
+
+.text{
+  line-height: 36px;
+  font-weight: 600;
+  font-size: 16px;
+  color: rgb(114 98 116);
+}
+
+.selected{
+  border-left: 4px solid rgb(245, 121, 226);
+  margin-left: -20px;
+  
+}
+
+.icon-select{
+  margin-left: 20px;
+  padding: 5px;
+  margin-right: 20px;
+  
+}
+
+.select{
+  line-height: 36px;
+  font-weight: 600;
+  font-size: 16px;
+  color: rgb(225, 54, 191);
+ 
+}
+
+.number{
+  font-size: 12px;
+  display: inline-block;
+  background-color: rgb(255, 222, 246);
+  border-radius: 30px;
+  color: rgb(236, 61, 160);
+  padding: 6px 12px;
+  position:absolute;
+  right: 0;
+  margin: 5px 20px 0 0;
+
+}
+
+
+.logout{
+  border-top: 2px solid rgb(246, 240, 252);
+  position: relative;
+  bottom: -150px
+
+}
+
+
+
+
+@media (max-width: 768px) {
+  .title {
+    display: none;
+  }
+
+
+  .box{
+    width: 90px;
+  }
+
+  .number{
+    display: none;
+  }
+
+  li{
+    padding: 6px 20px;
+    display: flex;
+    flex-wrap: wrap; /*흠*/
+    margin:10px 0;
+    justify-content: center;
+   
+  }
+
+  .text{
+    line-height: 18px;
+    font-weight: 600;
+    font-size: 12px;
+    color: rgb(114 98 116);
+  }
+  
+  .select{
+    line-height: 18px;
+    font-weight: 600;
+    font-size: 12px;
+    color: rgb(225, 54, 191);
+   
+  }
+
+  .logo{
+    margin: 0;
+  }
+  .icon{
+    padding: 5px;
+    margin: 0;
+  }
+
+  .selected {
+    border-left: 4px solid rgb(245, 121, 226);
+    margin-left: -20px;
+    padding-left: 36px;
+  }
+
+  .logout {
+    border-top: 2px solid rgb(246, 240, 252);
+    position: relative;
+    bottom: -180px;
+  }
+
+}
+
+
+
+/* 여기까지임 */
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #dae0eb;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(50, 44, 47);
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
